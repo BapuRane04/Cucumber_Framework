@@ -1,32 +1,20 @@
 package com.nopCommerce.pojo;
 
 public class RegisterRequestBuilder {
-	private static String gender;
+	
 	private static String firstName;
 	private static String lastName;
-	private static String dob;
 	private static String emailId;
-	private static String companyName;
 	private static String password;
 	private static String confirmPassword;
-	
-	public static String getGender() {
-		return gender;
-	}
 	public static String getFirstName() {
 		return firstName;
 	}
 	public static String getLastName() {
 		return lastName;
 	}
-	public static String getDob() {
-		return dob;
-	}
 	public static String getEmailId() {
 		return emailId;
-	}
-	public static String getCompanyName() {
-		return companyName;
 	}
 	public static String getPassword() {
 		return password;
@@ -34,23 +22,14 @@ public class RegisterRequestBuilder {
 	public static String getConfirmPassword() {
 		return confirmPassword;
 	}
-	public static void setGender(String gender) {
-		RegisterRequestBuilder.gender = gender;
-	}
 	public static void setFirstName(String firstName) {
 		RegisterRequestBuilder.firstName = firstName;
 	}
 	public static void setLastName(String lastName) {
 		RegisterRequestBuilder.lastName = lastName;
 	}
-	public static void setDob(String dob) {
-		RegisterRequestBuilder.dob = dob;
-	}
 	public static void setEmailId(String emailId) {
 		RegisterRequestBuilder.emailId = emailId;
-	}
-	public static void setCompanyName(String companyName) {
-		RegisterRequestBuilder.companyName = companyName;
 	}
 	public static void setPassword(String password) {
 		RegisterRequestBuilder.password = password;
@@ -58,5 +37,5 @@ public class RegisterRequestBuilder {
 	public static void setConfirmPassword(String confirmPassword) {
 		RegisterRequestBuilder.confirmPassword = confirmPassword;
 	}
-		
+	
 }

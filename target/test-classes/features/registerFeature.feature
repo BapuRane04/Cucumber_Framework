@@ -3,11 +3,11 @@ Feature: Register Feature
 Scenario Outline: Registeration For New User
 
 Given Open the website 
+Then Enter required details "<FirstName>""<LastName>""<emailID>""<password>""<confirmPassword>"
 Then click on register button
-Then Enter required details "<Gender>""<FirstName>""<LastName>""<DOB>""<emailID>""<companyName>""<password>""<confirmPassword>"
 Then Register User
 Then Close Window 
 
 Examples:
-        |Gender | FirstName       | LastName | DOB        | emailID                     | companyName | password | confirmPassword | 
-        | male  |  Automation      | Tester   | 04-11-1996 | automation.tester@gmail.com	| orosoft	  | tester   | tester          |    
+        |FirstName       | LastName | emailID                       | password | confirmPassword | 
+        |Automation      | Tester   | automation.tester@gmail.com	| tester   | tester          |    

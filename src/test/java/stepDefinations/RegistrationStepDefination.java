@@ -4,10 +4,10 @@ import javax.xml.xpath.XPathConstants;
 
 import org.openqa.selenium.WebDriver;
 
-import com.nopCommerce.commonSteps.GetAction;
-import com.nopCommerce.commonSteps.GetDriver;
-import com.nopCommerce.constants.XpathConstantForNopCommerce;
-import com.nopCommerce.feature.input.RegisterInput;
+import com.magento.commonSteps.GetAction;
+import com.magento.commonSteps.GetDriver;
+import com.magento.constants.XpathConstantForMagento;
+import com.magento.feature.input.RegisterInput;
 import com.nopCommerce.pojo.RegisterRequestBuilder;
 
 import io.cucumber.java.en.Given;
@@ -22,13 +22,12 @@ public class RegistrationStepDefination {
 	}
 	@Then("click on register button")
 	public void click_on_register_button() {
-	    GetAction.buttonClickUsingXpath(driver, XpathConstantForNopCommerce.REGISTER_BUTTON_XPATH);
+	    GetAction.buttonClickUsingXpath(driver, XpathConstantForMagento.REGISTER_BUTTON_XPATH);
 	}
 	@Then("Enter required details {string}{string}{string}{string}{string}{string}{string}{string}")
-	public void enter_required_details(String gender, String firstName, String lastName, String dob, String emailId, String companyName, String password, String confirmPassword) {
-	    registerRequestBuilder.setGender(gender);registerRequestBuilder.setFirstName(firstName);registerRequestBuilder.setLastName(lastName);
-	    registerRequestBuilder.setDob(dob);registerRequestBuilder.setEmailId(emailId);registerRequestBuilder.setCompanyName(companyName);
-	    registerRequestBuilder.setPassword(password);registerRequestBuilder.setConfirmPassword(confirmPassword);
+	public void enter_required_details(String firstName, String lastName, String emailId, String password, String confirmPassword) {
+	    registerRequestBuilder.setFirstName(firstName);registerRequestBuilder.setLastName(lastName);
+	    ;registerRequestBuilder.setEmailId(emailId);registerRequestBuilder.setPassword(password);registerRequestBuilder.setConfirmPassword(confirmPassword);
 	}
 	
 	@Then("Register User")
