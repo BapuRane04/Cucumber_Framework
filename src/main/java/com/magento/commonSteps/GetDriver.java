@@ -20,5 +20,8 @@ public class GetDriver {
 		
 		return driver;
 	}
-
+	
+	public static void getWindowClose(WebDriver driver) {
+		driver.quit();
+	}
 }
