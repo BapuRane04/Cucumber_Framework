@@ -9,5 +9,5 @@ Then Register User
 Then Close Window 
 
 Examples:
-        |FirstName       | LastName | emailID                       | password | confirmPassword | 
-        |Automation      | Tester   | automation.tester@gmail.com	| tester   | tester          |    
+        |FirstName | LastName | emailID                 | password      | confirmPassword | 
+        |Bapu      | Rane     | bapurane41096@gmail.com	| Bapu@41096    | Bapu@41096      |    

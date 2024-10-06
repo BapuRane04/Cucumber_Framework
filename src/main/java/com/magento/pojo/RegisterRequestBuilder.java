@@ -1,4 +1,4 @@
-package com.nopCommerce.pojo;
+package com.magento.pojo;
 
 public class RegisterRequestBuilder {
 	
