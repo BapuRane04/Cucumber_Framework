@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.magento.commonSteps.GetAction;
+import com.magento.commonSteps.TakeScreenshot;
 import com.magento.constants.XpathConstantForMagento;
 import com.magento.pojo.SignInRequestBuilder;
 
@@ -23,5 +24,6 @@ public class PerformSign {
 		test.info("Username: "+signRequetBuilder.getUsername());
 		GetAction.getInput(driver, XpathConstantForMagento.PASSWORD_XPATH, signRequetBuilder.getPassword());
 		test.info("Password: "+signRequetBuilder.getPassword());
+		TakeScreenshot.getScreenShot(driver, "Login");
 	}
 }
