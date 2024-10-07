@@ -3,6 +3,7 @@ package com.magento.feature.input;
 import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.magento.commonSteps.DisplayPasswordInEncryptedFormat;
 import com.magento.commonSteps.GetAction;
 import com.magento.commonSteps.TakeScreenshot;
 import com.magento.constants.XpathConstantForMagento;
@@ -23,7 +24,7 @@ public class PerformSign {
 		GetAction.getInput(driver, XpathConstantForMagento.EMAIL_ID_XPATH, signRequetBuilder.getUsername());
 		test.info("Username: "+signRequetBuilder.getUsername());
 		GetAction.getInput(driver, XpathConstantForMagento.PASSWORD_XPATH, signRequetBuilder.getPassword());
-		test.info("Password: "+signRequetBuilder.getPassword());
+		test.info("Password: "+DisplayPasswordInEncryptedFormat.getPasswordEncrypt(signRequetBuilder.getPassword()));
 		TakeScreenshot.getScreenShot(driver, "Login");
 	}
 }
